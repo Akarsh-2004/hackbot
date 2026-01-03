@@ -25,7 +25,6 @@ A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval
 - CTF (Capture The Flag) competitions
 - Red team operations planning
 
-## 📸 Screenshots
 
 ### Web Interface
 ```
