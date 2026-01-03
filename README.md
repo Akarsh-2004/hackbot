@@ -333,7 +333,7 @@ This tool is for **educational and authorized security research purposes only**.
 
 ## 📧 Contact
 
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@Akarsh-2004](https://github.com/Akarsh-2004)
 - Issues: [GitHub Issues](https://github.com/yourusername/hackgpt/issues)
 
 ---
