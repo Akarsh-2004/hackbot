@@ -1,0 +1,4 @@
+{
+  "url": "https://www.i2b2.org/NLP/DataSets/",
+  "text": "The Shared Tasks for Challenges in NLP for Clinical Data previously conducted through i2b2 are now are now housed in the Department of Biomedical Informatics (DBMI) at Harvard Medical School as n2c2: National NLP Clinical Challenges. The name n2c2 pays tribute to the program's i2b2 origins while recognizing its entry into a new era and organizational home.\nAll annotated and unannotated, deidentified patient discharge summaries previously made available to the community for research purposes through i2b2.org will now be accessed as n2c2 data sets through the DBMI Data Portal. Previous challenge participants will also access any challenge-specific documents in the Data Portal.\nAs always, you must register AND submit a DUA for access. If you previously accessed the data sets here on i2b2.org, you will need to set a new password for your account on the Data Portal, but your original DUA will be retained."
+}

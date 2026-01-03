@@ -1,0 +1,32 @@
+[
+  {
+    "id": "smb_enum",
+    "query": "How do I enumerate SMB on port 445?",
+    "expected_keywords": ["enum4linux", "smbclient", "crackmapexec", "shares", "null session"],
+    "confidence_threshold": "MEDIUM"
+  },
+  {
+    "id": "sql_injection",
+    "query": "What is SQL injection?",
+    "expected_keywords": ["database", "query", "input validation", "sqlmap", "union"],
+    "confidence_threshold": "HIGH"
+  },
+  {
+    "id": "linux_privesc",
+    "query": "What are common Linux privilege escalation techniques?",
+    "expected_keywords": ["sudo", "suid", "cron", "kernel", "capabilities"],
+    "confidence_threshold": "HIGH"
+  },
+  {
+    "id": "nmap_output",
+    "query": "Nmap scan report for 10.10.10.1\nPORT     STATE SERVICE\n22/tcp   open  ssh\n80/tcp   open  http\n445/tcp  open  microsoft-ds",
+    "expected_keywords": ["ssh", "http", "smb", "enumerate"],
+    "confidence_threshold": "HIGH"
+  },
+  {
+    "id": "web_enum",
+    "query": "What tools can I use for web enumeration?",
+    "expected_keywords": ["gobuster", "ffuf", "nikto", "burp", "directory"],
+    "confidence_threshold": "HIGH"
+  }
+]

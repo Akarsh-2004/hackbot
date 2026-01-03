@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large)
+data/index.faiss
+data/chunks.jsonl
+data/walkthroughs/
+data/sessions/
+data/evaluation/
+
+# Books (copyrighted)
+Books/*.pdf
+
+# Logs
+*.log
+logs/
+
+# Test results
+tests/results/
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+temp/

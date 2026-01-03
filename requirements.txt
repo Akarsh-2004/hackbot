@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+trafilatura
+tqdm
+newspaper3k
+lxml
+faiss-cpu
+sentence-transformers
+ollama
+pymupdf
+markdown

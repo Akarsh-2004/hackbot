@@ -1,0 +1,4 @@
+{
+  "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+  "text": "A list of useful payloads and bypasses for Web Application Security. Feel free to improve with your payloads and techniques!\nYou can also contribute with a 🍻 IRL, or using the sponsor button.\nAn alternative display version is available at PayloadsAllTheThingsWeb.\nEvery section contains the following files, you can use the _template_vuln\n- README.md - vulnerability description and how to exploit it, including several payloads\n- Intruder - a set of files to give to Burp Intruder\n- Files - some files referenced in the README.md\nYou might also like the other projects from the AllTheThings family :\n- InternalAllTheThings - Active Directory and Internal Pentest Cheatsheets\n- HardwareAllTheThings - Hardware/IOT Pentesting Wiki\nYou want more? Check the Books and YouTube channel selections.\nThis project is proudly sponsored by these companies."
+}

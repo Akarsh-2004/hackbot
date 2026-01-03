@@ -1,0 +1,4 @@
+{
+  "url": "https://capec.mitre.org/",
+  "text": "Understanding how the adversary operates is essential to effective cybersecurity. CAPEC™ helps by providing a comprehensive dictionary of known patterns of attack employed by adversaries to exploit known weaknesses in cyber-enabled capabilities. It can be used by analysts, developers, testers, and educators to advance community understanding and enhance defenses.\nCommon Attack Pattern Enumerations and Classifications (CAPEC™) can be overwhelming to someone new to cyber-attack patterns. This page offers tips on how to familiarize yourself with what CAPEC has to offer, before more fully exploring this extensive knowledge base.\n| If you would like to be a part of ongoing discussions related to MITRE’s work in shifting the balance of cybersecurity risk, please visit the Common Weakness Enumeration (CWE™) website. |"
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackGPT - Personal Hacking Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-bg"></canvas>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-skull-crossbones"></i>
+                <span class="logo-text">HACK<span class="glow">GPT</span></span>
+            </div>
+            <div class="header-right">
+                <div class="confidence-meter">
+                    <span class="confidence-label">Confidence:</span>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidence-fill"></div>
+                    </div>
+                    <span class="confidence-value" id="confidence-value">--</span>
+                </div>
+                <div class="session-indicator">
+                    <i class="fas fa-server"></i>
+                    <span id="session-name">default</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-crosshairs"></i> Target Info</h3>
+                    <div id="target-info" class="target-card">
+                        <p class="no-target">No active target</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-terminal"></i> Commands</h3>
+                    <div class="command-list">
+                        <div class="command-item" onclick="insertCommand('/target ')">
+                            <code>/target &lt;ip&gt;</code>
+                            <span>Set target</span>
+                        </div>
+                        <div class="command-item" onclick="insertCommand('/ports ')">
+                            <code>/ports &lt;ports&gt;</code>
+                            <span>Add ports</span>
+                        </div>
+                        <div class="command-item" onclick="insertCommand('/status')">
+                            <code>/status</code>
+                            <span>Show status</span>
+                        </div>
+                        <div class="command-item" onclick="insertCommand('/save')">
+                            <code>/save</code>
+                            <span>Save session</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-book"></i> Quick Queries</h3>
+                    <div class="quick-queries">
+                        <button class="quick-btn" onclick="sendQuickQuery('How do I enumerate SMB on port 445?')">
+                            SMB Enumeration
+                        </button>
+                        <button class="quick-btn" onclick="sendQuickQuery('What is SQL injection?')">
+                            SQL Injection
+                        </button>
+                        <button class="quick-btn" onclick="sendQuickQuery('Linux privilege escalation techniques')">
+                            Linux PrivEsc
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="welcome-message">
+                        <i class="fas fa-shield-alt"></i>
+                        <h2>Welcome to HackGPT</h2>
+                        <p>Your personal ethical hacking assistant</p>
+                        <div class="features">
+                            <span><i class="fas fa-bolt"></i> Fast Responses</span>
+                            <span><i class="fas fa-brain"></i> Session Memory</span>
+                            <span><i class="fas fa-tools"></i> Tool Parsing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="status-bar" id="status-bar">
+                        <span id="status-text">Ready</span>
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="query-input" 
+                            placeholder="Ask a question or paste tool output..."
+                            rows="1"
+                        ></textarea>
+                        <button id="send-btn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="js/app.js"></script>
+</body>
+</html>
