@@ -79,7 +79,11 @@ A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval
    ollama serve
    ```
 
-4. **Ingest knowledge base** (first time only)
+4. **Knowledge Base (Optional)**
+   
+   The repository already includes a pre-computed vector index and data chunks (`data/index.faiss` and `data/chunks.jsonl`). You can **skip this step** and start the app immediately.
+   
+   If you want to add your own books or update the index, run:
    ```bash
    python hackgpt/ingest.py
    ```
@@ -87,8 +91,7 @@ A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval
    This will:
    - Process PDF books from `Books/` directory
    - Clone security repositories (PayloadsAllTheThings)
-   - Generate embeddings (~5-10 minutes)
-   - Create FAISS vector index
+   - Update the FAISS vector index (~5-10 minutes)
 
 5. **Run the application**
 
