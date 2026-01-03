@@ -2,7 +2,6 @@
 
 A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval-Augmented Generation) capabilities. Built for security researchers and ethical hackers.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8+-green.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
