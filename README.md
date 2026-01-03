@@ -58,7 +58,7 @@ A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/hackgpt.git
+   git clone https://github.com/Akarsh-2004/hackgpt.git
    cd hackgpt
    ```
 
