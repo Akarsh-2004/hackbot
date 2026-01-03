@@ -21,11 +21,7 @@ ENV/
 Thumbs.db
 
 # Data files (large)
-data/index.faiss
-data/chunks.jsonl
-data/walkthroughs/
-data/sessions/
-data/evaluation/
+
 
 # Books (copyrighted)
 Books/*.pdf
