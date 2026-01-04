@@ -23,7 +23,7 @@ A powerful, offline AI-powered penetration testing assistant with RAG (Retrieval
 - Learning offensive security techniques
 - Quick payload and exploit reference
 - CTF (Capture The Flag) competitions
-- Red team operations planning
+- Red team operations planing
 
 
 ### Web Interface
